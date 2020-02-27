@@ -19,7 +19,6 @@ import android.widget.Button;
 
 public class SecondFragment extends Fragment {
 
-    Button btn_go;
     private NavController navController;
 
 
@@ -33,13 +32,6 @@ public class SecondFragment extends Fragment {
         // navController = Navigation.findNavController(getActivity(),R.id.nav_host_fragment);
         navController = Navigation.findNavController(getActivity(),R.id.nav_host_fragment);
 
-        btn_go  = view.findViewById(R.id.btn_second);
-        btn_go.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.firstFragment);
-            }
-        });
     }
 
 
